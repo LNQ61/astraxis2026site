@@ -669,6 +669,14 @@ textarea {
   color: #273445;
 }
 
+.page-hero .article p {
+  color: #dce8ef;
+}
+
+.page-hero .eyebrow {
+  color: #ffb3b7;
+}
+
 .sources {
   padding-left: 20px;
 }
