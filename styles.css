@@ -830,3 +830,7 @@ textarea {
     gap: 12px;
   }
 }
+
+.hidden {
+  display: none;
+}

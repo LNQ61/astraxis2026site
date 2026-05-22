@@ -18,14 +18,17 @@
         <p>Address: 2 Banyan Place, Singapore 627770</p>
         <p>Singapore-based support for Asia suppliers and Singapore pharma, biotech, laboratory, and controlled-environment teams.</p>
       </div>
-      <form class="panel" action="mailto:admin@astraxis.com" method="post" enctype="text/plain">
+      <form class="panel" name="contact" action="/contact-success" method="post" netlify data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden"><label>Do not fill this out: <input name="bot-field"></label></p>
         <div class="form-grid">
-          <label>Name<input name="name" autocomplete="name"></label>
-          <label>Company<input name="company" autocomplete="organization"></label>
-          <label>Email<input name="email" type="email" autocomplete="email"></label>
-          <label>Phone / WhatsApp<input name="phone" autocomplete="tel"></label>
+          <label>Name<input name="name" autocomplete="name" required></label>
+          <label>Company<input name="company" autocomplete="organization" required></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required></label>
+          <label>Phone / WhatsApp<input name="phone" autocomplete="tel" required></label>
           <label class="wide">Request type
-            <select name="request_type">
+            <select name="request_type" required>
+              <option value="">Select a request type</option>
               <option>Sourcing request</option>
               <option>Supplier partnership</option>
               <option>Service support</option>
@@ -33,7 +36,7 @@
               <option>General enquiry</option>
             </select>
           </label>
-          <label class="wide">Message<textarea name="message"></textarea></label>
+          <label class="wide">Message<textarea name="message" required></textarea></label>
         </div>
         <p><button class="button" type="submit">Send enquiry</button></p>
       </form>
