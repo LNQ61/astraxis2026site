@@ -862,3 +862,14 @@ textarea {
 .hidden {
   display: none;
 }
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
