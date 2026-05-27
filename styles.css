@@ -873,3 +873,14 @@ figcaption {
   font-size: 14px;
   line-height: 1.5;
 }
+
+.figure-center {
+  text-align: center;
+}
+
+.figure-center img {
+  display: inline-block;
+  max-width: 680px;
+  width: 100%;
+  border-radius: 8px;
+}
