@@ -10,8 +10,8 @@
   --brand-red: #df0b12;
   --teal: var(--brand-blue);
   --teal-2: var(--brand-blue-dark);
-  --teal-soft: #e7f0f5;
-  --teal-dark: var(--brand-blue);
+  --teal-soft: #fdeaeb;
+  --teal-dark: var(--brand-red);
   --gold: var(--brand-red);
   --white: #ffffff;
   --shadow: 0 18px 45px rgba(19, 32, 51, 0.10);
@@ -115,7 +115,7 @@ a {
 }
 
 .nav-links a:hover {
-  color: var(--teal);
+  color: var(--brand-red);
 }
 
 .button {
@@ -124,16 +124,17 @@ a {
   justify-content: center;
   min-height: 42px;
   padding: 10px 16px;
-  border: 1px solid var(--teal);
+  border: 1px solid var(--brand-red);
   border-radius: 6px;
   color: var(--white);
-  background: var(--teal);
+  background: var(--brand-red);
   font-weight: 700;
   text-decoration: none;
 }
 
 .button.secondary {
-  color: var(--teal-2);
+  border-color: var(--brand-blue);
+  color: var(--brand-blue);
   background: transparent;
 }
 
@@ -155,7 +156,7 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(0, 38, 61, 0.94), rgba(0, 50, 80, 0.76) 46%, rgba(0, 50, 80, 0.28)),
+    linear-gradient(120deg, rgba(0, 38, 61, 0.96) 0%, rgba(0, 38, 61, 0.88) 30%, rgba(185, 12, 18, 0.72) 62%, rgba(0, 38, 61, 0.38) 100%),
     url("assets/hero-bridge.jpg") center / cover no-repeat;
 }
 
@@ -168,7 +169,7 @@ a {
 
 .eyebrow {
   margin: 0 0 12px;
-  color: var(--teal);
+  color: var(--brand-red);
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0;
@@ -312,7 +313,7 @@ h1 {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--teal);
+  background: var(--brand-red);
 }
 
 .audience-grid,
@@ -352,7 +353,7 @@ h1 {
   right: -14px;
   width: 14px;
   height: 1px;
-  background: var(--teal);
+  background: var(--brand-red);
 }
 
 .process-step:last-child::after {
@@ -472,7 +473,7 @@ h1 {
 
 .date {
   margin: 0 0 8px;
-  color: var(--teal);
+  color: var(--brand-red);
   font-size: 13px;
   font-weight: 800;
   text-transform: uppercase;
@@ -480,7 +481,7 @@ h1 {
 
 .cta {
   color: var(--white);
-  background: linear-gradient(135deg, var(--brand-blue-dark), var(--brand-blue));
+  background: linear-gradient(135deg, var(--brand-red) 0%, #960a10 45%, var(--brand-blue-dark) 100%);
 }
 
 .cta .section {
@@ -488,8 +489,12 @@ h1 {
   padding-bottom: 64px;
 }
 
+.cta .eyebrow {
+  color: rgba(255, 200, 202, 0.9);
+}
+
 .cta p {
-  color: #dce8ef;
+  color: rgba(255, 220, 222, 0.88);
 }
 
 .form-grid {
@@ -595,8 +600,7 @@ textarea {
 .page-hero::after {
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(0, 38, 61, 0.94), rgba(0, 50, 80, 0.78) 52%, rgba(0, 50, 80, 0.42)),
-    linear-gradient(180deg, rgba(0, 38, 61, 0.18), rgba(0, 38, 61, 0.48));
+    linear-gradient(120deg, rgba(0, 38, 61, 0.94) 0%, rgba(0, 38, 61, 0.82) 32%, rgba(175, 12, 18, 0.68) 62%, rgba(0, 38, 61, 0.38) 100%);
 }
 
 .hero-pharma {
@@ -753,13 +757,13 @@ textarea {
 }
 
 .tag-filter-btn:hover {
-  border-color: var(--brand-blue);
-  color: var(--brand-blue);
+  border-color: var(--brand-red);
+  color: var(--brand-red);
 }
 
 .tag-filter-btn.active {
-  border-color: var(--brand-blue);
-  background: var(--brand-blue);
+  border-color: var(--brand-red);
+  background: var(--brand-red);
   color: var(--white);
 }
 
@@ -771,7 +775,7 @@ textarea {
   padding: 0 9px;
   border-radius: 11px;
   background: var(--teal-soft);
-  color: var(--brand-blue);
+  color: var(--brand-red);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -834,7 +838,7 @@ textarea {
 }
 
 .article-content h3 a:hover {
-  color: var(--brand-blue);
+  color: var(--brand-red);
   text-decoration: underline;
 }
 
