@@ -443,6 +443,10 @@ h1 {
   padding: 24px;
 }
 
+.two-col > .capability-card {
+  align-self: stretch;
+}
+
 .audience-card h3,
 .capability-card h3 {
   font-size: 22px;
